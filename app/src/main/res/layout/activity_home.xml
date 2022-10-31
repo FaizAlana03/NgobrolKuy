@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/gradient_drawable">
+
+    <TextView
+        android:id="@+id/tvN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Ngobrol"
+        android:textColor="@color/white"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Kuy"
+        android:textColor="@color/pink"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tvN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSH"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ1"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvN" />
+
+    <TextView
+        android:id="@+id/tv1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Juned"
+        app:layout_constraintTop_toBottomOf="@id/tvN"
+        app:layout_constraintStart_toEndOf="@id/civ1"/>
+
+    <TextView
+        android:id="@+id/tv1b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="AAAAAAAAAAAAAAA"
+        app:layout_constraintTop_toBottomOf="@id/tv1a"
+        app:layout_constraintStart_toEndOf="@id/civ1"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ2"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ1" />
+
+    <TextView
+        android:id="@+id/tv2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Sukma"
+        app:layout_constraintTop_toBottomOf="@id/tv1b"
+        app:layout_constraintStart_toEndOf="@id/civ2"/>
+
+    <TextView
+        android:id="@+id/tv2b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="Dik"
+        app:layout_constraintTop_toBottomOf="@id/tv2a"
+        app:layout_constraintStart_toEndOf="@id/civ2"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ3"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ2" />
+
+    <TextView
+        android:id="@+id/tv3a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="John Cena"
+        app:layout_constraintTop_toBottomOf="@id/tv2b"
+        app:layout_constraintStart_toEndOf="@id/civ3"/>
+
+    <TextView
+        android:id="@+id/tv3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="You cant see me"
+        app:layout_constraintTop_toBottomOf="@id/tv3a"
+        app:layout_constraintStart_toEndOf="@id/civ3"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ4"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ3" />
+
+    <TextView
+        android:id="@+id/tv4a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Adolf H."
+        app:layout_constraintTop_toBottomOf="@id/tv3b"
+        app:layout_constraintStart_toEndOf="@id/civ4"/>
+
+    <TextView
+        android:id="@+id/tv4b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="NEIN NEIN NEIN"
+        app:layout_constraintTop_toBottomOf="@id/tv4a"
+        app:layout_constraintStart_toEndOf="@id/civ4"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ5"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ4" />
+
+    <TextView
+        android:id="@+id/tv5a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Jotaro"
+        app:layout_constraintTop_toBottomOf="@id/tv4b"
+        app:layout_constraintStart_toEndOf="@id/civ5"/>
+
+    <TextView
+        android:id="@+id/tv5b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="DIOOOOOOOOOOO"
+        app:layout_constraintTop_toBottomOf="@id/tv5a"
+        app:layout_constraintStart_toEndOf="@id/civ5"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ6"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ5" />
+
+    <TextView
+        android:id="@+id/tv6a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Jotaro"
+        app:layout_constraintTop_toBottomOf="@id/tv5b"
+        app:layout_constraintStart_toEndOf="@id/civ6"/>
+
+    <TextView
+        android:id="@+id/tv6b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="DIOOOOOOOOOOO"
+        app:layout_constraintTop_toBottomOf="@id/tv6a"
+        app:layout_constraintStart_toEndOf="@id/civ6"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ7"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ6" />
+
+    <TextView
+        android:id="@+id/tv7a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Jotaro"
+        app:layout_constraintTop_toBottomOf="@id/tv6b"
+        app:layout_constraintStart_toEndOf="@id/civ7"/>
+
+    <TextView
+        android:id="@+id/tv7b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="DIOOOOOOOOOOO"
+        app:layout_constraintTop_toBottomOf="@id/tv7a"
+        app:layout_constraintStart_toEndOf="@id/civ7"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ8"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ7" />
+
+    <TextView
+        android:id="@+id/tv8a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Jotaro"
+        app:layout_constraintTop_toBottomOf="@id/tv7b"
+        app:layout_constraintStart_toEndOf="@id/civ8"/>
+
+    <TextView
+        android:id="@+id/tv8b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="DIOOOOOOOOOOO"
+        app:layout_constraintTop_toBottomOf="@id/tv8a"
+        app:layout_constraintStart_toEndOf="@id/civ8"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ9"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ8" />
+
+    <TextView
+        android:id="@+id/tv9a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Jotaro"
+        app:layout_constraintTop_toBottomOf="@id/tv8b"
+        app:layout_constraintStart_toEndOf="@id/civ9"/>
+
+    <TextView
+        android:id="@+id/tv9b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:text="DIOOOOOOOOOOO"
+        app:layout_constraintTop_toBottomOf="@id/tv9a"
+        app:layout_constraintStart_toEndOf="@id/civ9"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@
     tools:context=".SplashActivity">
 
     <ImageView
+        android:id="@+id/ivS"
         android:layout_width="240px"
         android:layout_height="240px"
         android:src="@drawable/ngobrolkuy_icon"

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@drawable/gradient_drawable">
+
+    <ImageView
+        android:id="@+id/ivAS"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivAS"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civS"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvS" />
+
+    <TextView
+        android:id="@+id/tvNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Juned"
+        app:layout_constraintTop_toBottomOf="@id/tvS"
+        app:layout_constraintStart_toEndOf="@id/civS"/>
+
+    <TextView
+        android:id="@+id/tvES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Ini email"
+        app:layout_constraintTop_toBottomOf="@id/civS"
+        app:layout_constraintStart_toStartOf="parent"
+
+    <TextView
+        android:id="@+id/tvPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="Ini password"
+        app:layout_constraintTop_toBottomOf="@id/tvES"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="32dp"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintTop_toBottomOf="@id/tvPS"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Github"
+            android:fontFamily="@font/redhatdisplay_regular"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
